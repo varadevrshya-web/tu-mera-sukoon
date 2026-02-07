@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tu Mera Sukoon</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body{
+  margin:0;
+  height:100vh;
+  background:radial-gradient(circle at top,#1b2735,#090a0f);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family:Arial, sans-serif;
+  color:white;
+}
+
+/* Player card */
+.player{
+  background:rgba(20,20,30,0.7);
+  border-radius:20px;
+  padding:25px;
+  width:90%;
+  max-width:360px;
+  text-align:center;
+  box-shadow:0 0 30px rgba(0,255,255,0.4);
+  border:2px solid #00f5ff;
+}
+
+h1{
+  margin:5px 0;
+  font-size:22px;
+}
+
+.artist{
+  opacity:.8;
+  margin-bottom:15px;
+  font-size:14px;
+}
+
+audio{
+  width:100%;
+  margin-bottom:15px;
+}
+
+a.download{
+  display:inline-block;
+  background:rgba(255,255,255,.1);
+  color:white;
+  border:1px solid rgba(255,255,255,.3);
+  padding:10px 18px;
+  border-radius:20px;
+  text-decoration:none;
+  font-size:13px;
+  transition:.3s;
+}
+
+a.download:hover{
+  box-shadow:0 0 12px #00f5ff;
+}
+
+footer{
+  margin-top:15px;
+  font-size:11px;
+  opacity:.6;
+}
+</style>
+</head>
+
+<body>
+
+<div class="player">
+  <h1>🎵Tu Mera Sukoon🎵</h1>
+  <div class="artist">Devrshya Vara</div>
+
+  <!-- Audio file name with spaces -->
+  <audio controls>
+    <source src="tu mera sukoon.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Download button -->
+  <a class="download" href="tu mera sukoon.mp3" download>
+    ⬇️ Download
+  </a>
+
+  <footer>Lyrics and Composed by Devrshya Vara</footer>
+</div>
+
+</body>
+</html>
